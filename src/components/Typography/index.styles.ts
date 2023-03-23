@@ -16,15 +16,6 @@ export const useStyles = makeStyles<Theme, IProps>((theme) => {
   const isAcura = theme.name === "acura";
 
   return {
-    base: {
-      padding: isAcura ? "16px 33px" : "9px 24px",
-      textTransform: "none",
-      borderRadius: isAcura ? "0" : "19px",
-      fontWeight: "bold",
-      "&:focus": {
-        ...focusableStyles(),
-        outlineColor: (props) => (props.isDark ? "white" : "black"),
-      },
-    },
+    base: {},
   };
 });

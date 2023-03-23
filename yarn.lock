@@ -1545,6 +1545,16 @@
     "@codemirror/view" "^0.19.4"
     js-yaml "^4.1.0"
 
+"@fontsource/dosis@^4.5.11":
+  version "4.5.11"
+  resolved "https://registry.yarnpkg.com/@fontsource/dosis/-/dosis-4.5.11.tgz#78e6871187793a3b283ce807dcdbbdc06af9c197"
+  integrity sha512-bPFz80oRiNVYnojK9pDG243oHHpIbg+54EPLp9IRH9vKyk2WQNgBQATjO9u86C6weN8tEO25GM4tSU0ev7I1Vg==
+
+"@fontsource/exo-2@^4.5.11":
+  version "4.5.11"
+  resolved "https://registry.yarnpkg.com/@fontsource/exo-2/-/exo-2-4.5.11.tgz#0e946b15e7f31f1b622b059c9647503d5ce38c72"
+  integrity sha512-wNE9MJHL+NBEoPy/gDWLF3Wzn0YJLyM8YUVxfuW0w0ociY50Ae1x0DrC5A3R2G59aySiox/VYJppenWZJG3psQ==
+
 "@fontsource/material-icons@^4.5.4":
   version "4.5.4"
   resolved "https://registry.yarnpkg.com/@fontsource/material-icons/-/material-icons-4.5.4.tgz#bfedde9352c36dbbacb6b49d190a1ce1e5917756"
