@@ -30,5 +30,6 @@ module.exports = {
           ? !/node_modules\/(?!@mui)/.test(prop.parent.fileName)
           : true,
     },
+    includes: ["theme.d.ts"],
   },
 };

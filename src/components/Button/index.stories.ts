@@ -1,10 +1,10 @@
-import { Button } from ".";
+import Button from ".";
 
 // More on how to set up stories at: https://storybook.js.org/docs/7.0/react/writing-stories/introduction
 export default {
   title: "Components/Button",
   component: Button,
-  tags: ["autodocs"],
+  tags: [],
   argTypes: {
     color: {
       control: "select",

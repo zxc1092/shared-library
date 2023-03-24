@@ -36,6 +36,7 @@
     "@fontsource/exo-2": "^4.5.11",
     "@fontsource/material-icons": "^4.5.4",
     "@fontsource/roboto": "^4.5.8",
+    "@mui/icons-material": "^5.11.11",
     "@mui/material": "^5.11.13",
     "@mui/styles": "^5.11.13"
   }

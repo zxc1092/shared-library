@@ -12,14 +12,21 @@ function focusableStyles() {
   };
 }
 
-export const useStyles = makeStyles<Theme, IProps>((theme) => {
-  const isAcura = theme.name === "acura";
+const brandStyles = {
+  acura: {
+    padding: "16px 33px",
+  },
+  honda: {
+    padding: "9px 24px",
+    borderRadius: "19px",
+  },
+};
 
+export const useStyles = makeStyles<Theme, IProps>((theme) => {
   return {
     base: {
-      padding: isAcura ? "16px 33px" : "9px 24px",
+      ...brandStyles[theme.name],
       textTransform: "none",
-      borderRadius: isAcura ? "0" : "19px",
       fontWeight: "bold",
       "&:focus": {
         ...focusableStyles(),

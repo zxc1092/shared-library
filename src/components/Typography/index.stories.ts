@@ -1,10 +1,10 @@
-import { Typography } from ".";
+import Typography from ".";
 
 // More on how to set up stories at: https://storybook.js.org/docs/7.0/react/writing-stories/introduction
 export default {
   title: "Components/Typography",
   component: Typography,
-  tags: ["autodocs"],
+  tags: [],
   argTypes: {
     variant: {
       control: "select",
@@ -20,7 +20,6 @@ export default {
         "body4",
         "body5",
       ],
-      description: "contained",
     },
   },
 };

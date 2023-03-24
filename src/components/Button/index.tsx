@@ -4,9 +4,11 @@ import {
   ButtonProps as MuiButtonProps,
   useTheme,
 } from "@mui/material";
-import { useStyles } from "./index.styles";
 
-type TButtonBaseProps = Pick<MuiButtonProps, "variant" | "size" | "color">;
+type TButtonBaseProps = Pick<
+  MuiButtonProps,
+  "variant" | "size" | "color" | "sx"
+>;
 
 export interface IButtonProps extends TButtonBaseProps {
   label?: string;
@@ -14,14 +16,15 @@ export interface IButtonProps extends TButtonBaseProps {
   onClick?: () => void;
 }
 
-export const Button = ({ label, isDark, ...rest }: IButtonProps) => {
+const Button = ({ label, isDark, ...rest }: IButtonProps) => {
   const theme = useTheme();
-  const classes = useStyles({ isDark });
   return (
     <>
-      <MuiButton className={classes.base} disableRipple {...rest}>
+      <MuiButton disableRipple {...rest}>
         {label || theme.name}
       </MuiButton>
     </>
   );
 };
+
+export default Button;

@@ -4,11 +4,10 @@ import {
   TypographyProps as MuiTypographyProps,
   useTheme,
 } from "@mui/material";
-import { useStyles } from "./index.styles";
 
 type TTypographyBaseProps = Pick<
   MuiTypographyProps,
-  "align" | "variant" | "color"
+  "align" | "variant" | "color" | "noWrap"
 >;
 
 export interface ITypographyProps extends TTypographyBaseProps {
@@ -17,14 +16,9 @@ export interface ITypographyProps extends TTypographyBaseProps {
   onClick?: () => void;
 }
 
-export const Typography = ({ label, isDark, ...rest }: ITypographyProps) => {
+const Typography = ({ label, isDark, ...rest }: ITypographyProps) => {
   const theme = useTheme();
-  const classes = useStyles({ isDark });
-  return (
-    <>
-      <MuiTypography className={classes.base} {...rest}>
-        {label || theme.name}
-      </MuiTypography>
-    </>
-  );
+  return <MuiTypography {...rest}>{label || theme.name}</MuiTypography>;
 };
+
+export default Typography;
