@@ -1,5 +1,4 @@
 import React from "react";
-import PropTypes from "prop-types";
 import AppBar from "@mui/material/AppBar";
 import Container from "@mui/material/Container";
 import Toolbar from "@mui/material/Toolbar";
@@ -7,11 +6,9 @@ import Box from "@mui/material/Box";
 import IconButton from "@mui/material/IconButton";
 import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
-import Tooltip from "@mui/material/Tooltip";
-import Avatar from "@mui/material/Avatar";
 import Typography from "@mui/material/Typography";
 import MenuIcon from "@mui/icons-material/Menu";
-import { useTheme } from "@mui/material";
+import { Icon, useTheme } from "@mui/material";
 
 import Button from "../../components/Button";
 
@@ -22,7 +19,7 @@ interface IProps {
   color: "primary" | "secondary";
 }
 
-export const Header = ({ color }: IProps) => {
+const Navbar = ({ color }: IProps) => {
   const theme = useTheme();
   const [anchorElNav, setAnchorElNav] = React.useState<HTMLElement>();
 
@@ -127,3 +124,5 @@ export const Header = ({ color }: IProps) => {
     </AppBar>
   );
 };
+
+export default Navbar;
