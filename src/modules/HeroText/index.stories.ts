@@ -13,22 +13,17 @@ export default {
 
 export const Primary = {
   args: {
-    HeroText: [
+    title: "Album layout",
+    description:
+      "Something short and leading about the collection below—its contents,  the creator, etc. Make it short and sweet, but not too short so folks don&apos;t simply skip over it entirely.",
+    ctaRow: [
       {
-        title: "Featured post",
-        date: "Nov 12",
-        description:
-          "This is a wider card with supporting text below as a natural lead-in to additional content.",
-        image: "https://source.unsplash.com/random",
-        imageLabel: "Image Text",
+        text: "Main call to action",
+        variant: "contained" as "contained",
       },
       {
-        title: "Post title",
-        date: "Nov 11",
-        description:
-          "This is a wider card with supporting text below as a natural lead-in to additional content.",
-        image: "https://source.unsplash.com/random",
-        imageLabel: "Image Text",
+        text: "Secondary action",
+        variant: "outlined" as "outlined",
       },
     ],
   },

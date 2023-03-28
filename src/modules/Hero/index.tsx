@@ -5,6 +5,7 @@ import Link from "@mui/material/Link";
 import Paper from "@mui/material/Paper";
 import useTheme from "@mui/material/styles/useTheme";
 import Typography from "@mui/material/Typography";
+import Button from "@mui/material/Button";
 
 interface IProps {
   title: string;
@@ -12,6 +13,7 @@ interface IProps {
   image: string;
   imageText: string;
   linkText: string;
+  linkVariant: "contained" | "outlined" | "text";
 }
 
 const headerColor = {
@@ -19,7 +21,14 @@ const headerColor = {
   honda: "primary",
 };
 
-const Hero = ({ title, description, image, imageText, linkText }: IProps) => {
+const Hero = ({
+  title,
+  description,
+  image,
+  imageText,
+  linkText,
+  linkVariant,
+}: IProps) => {
   const theme = useTheme();
 
   return (
@@ -56,9 +65,9 @@ const Hero = ({ title, description, image, imageText, linkText }: IProps) => {
             <Typography variant="h5" color="inherit" paragraph>
               {description}
             </Typography>
-            <Link variant="subtitle1" href="#">
+            <Button variant={linkVariant} href="#">
               {linkText}
-            </Link>
+            </Button>
           </Box>
         </Grid>
       </Grid>

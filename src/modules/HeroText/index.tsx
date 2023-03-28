@@ -9,7 +9,7 @@ import Stack from "@mui/material/Stack";
 interface IProps {
   title: string;
   description: string;
-  ctaRow: {
+  ctaRows: {
     text: string;
     variant: "contained" | "outlined" | "text";
   }[];
@@ -20,11 +20,11 @@ const headerColor = {
   honda: "primary",
 };
 
-const HeroText = ({ title, description, ctaRow }: IProps) => {
+const HeroText = ({ title, description, ctaRows }: IProps) => {
   const theme = useTheme();
 
   return (
-    <Container maxWidth="sm">
+    <Container maxWidth="sm" sx={{ p: 4 }}>
       <Typography
         component="h1"
         variant="h2"
@@ -38,7 +38,7 @@ const HeroText = ({ title, description, ctaRow }: IProps) => {
         {description}
       </Typography>
       <Stack sx={{ pt: 4 }} direction="row" spacing={2} justifyContent="center">
-        {ctaRow.map((cta) => (
+        {ctaRows?.map((cta) => (
           <Button variant={cta.variant}>{cta.text}</Button>
         ))}
       </Stack>
