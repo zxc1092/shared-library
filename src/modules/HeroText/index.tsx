@@ -6,7 +6,7 @@ import Container from "@mui/material/Container";
 import Button from "@mui/material/Button";
 import Stack from "@mui/material/Stack";
 
-interface IProps {
+interface Props {
   title: string;
   description: string;
   ctaRows: {
@@ -20,7 +20,7 @@ const headerColor = {
   honda: "primary",
 };
 
-const HeroText = ({ title, description, ctaRows }: IProps) => {
+const HeroText = ({ title, description, ctaRows }: Props) => {
   const theme = useTheme();
 
   return (

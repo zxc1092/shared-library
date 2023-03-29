@@ -1,4 +1,5 @@
 import Navbar from ".";
+import { Meta, Story } from "@storybook/react";
 
 export default {
   title: "Modules/Navbar",
@@ -15,7 +16,7 @@ export default {
       options: ["primary", "secondary"],
     },
   },
-};
+} as Meta;
 
 export const Primary = {
   args: {

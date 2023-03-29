@@ -8,7 +8,7 @@ import CardMedia from "@mui/material/CardMedia";
 import Button from "@mui/material/Button";
 import CardActions from "@mui/material/CardActions";
 
-interface IProps {
+interface Props {
   cards: {
     title: string;
     description: string;
@@ -24,7 +24,7 @@ const headerColor = {
   honda: "primary",
 };
 
-const infoCards = ({ cards }: IProps) => {
+const infoCards = ({ cards }: Props) => {
   const theme = useTheme();
 
   return (

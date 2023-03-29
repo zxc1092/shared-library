@@ -10,7 +10,7 @@ import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 
-interface IProps {
+interface Props {
   promoCards: {
     title: string;
     description: string;
@@ -25,7 +25,7 @@ const headerColor = {
   honda: "primary",
 };
 
-const PromoCards = ({ promoCards }: IProps) => {
+const PromoCards = ({ promoCards }: Props) => {
   const theme = useTheme();
 
   return (

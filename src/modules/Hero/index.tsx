@@ -7,7 +7,7 @@ import useTheme from "@mui/material/styles/useTheme";
 import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 
-interface IProps {
+interface Props {
   title: string;
   description: string;
   image: string;
@@ -28,7 +28,7 @@ const Hero = ({
   imageText,
   linkText,
   linkVariant,
-}: IProps) => {
+}: Props) => {
   const theme = useTheme();
 
   return (

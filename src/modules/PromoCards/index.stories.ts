@@ -1,3 +1,4 @@
+import { Meta, Story } from "@storybook/react";
 import PromoCards from ".";
 
 export default {
@@ -9,7 +10,7 @@ export default {
     // More on how to position stories at: https://storybook.js.org/docs/7.0/react/configure/story-layout
     layout: "fullscreen",
   },
-};
+} as Meta;
 
 export const Primary = {
   args: {

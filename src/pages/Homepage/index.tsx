@@ -100,7 +100,11 @@ const infoCards = [
   },
 ];
 
-const headerColor = {
+interface IHeaderColor {
+  [key: string]: "primary" | "secondary";
+}
+
+const headerColor: IHeaderColor = {
   acura: "secondary",
   honda: "primary",
 };

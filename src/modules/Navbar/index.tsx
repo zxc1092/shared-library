@@ -15,11 +15,11 @@ import Button from "../../components/Button";
 const pages = ["Products", "Pricing", "Blog"];
 const settings = ["Profile", "Account", "Dashboard", "Logout"];
 
-interface IProps {
+interface Props {
   color: "primary" | "secondary";
 }
 
-const Navbar = ({ color }: IProps) => {
+const Navbar = ({ color }: Props) => {
   const theme = useTheme();
   const [anchorElNav, setAnchorElNav] = React.useState<HTMLElement>();
 
@@ -30,8 +30,6 @@ const Navbar = ({ color }: IProps) => {
   const handleCloseNavMenu = () => {
     setAnchorElNav(undefined);
   };
-
-  console.log(theme);
 
   return (
     <AppBar position="static" color={color}>
