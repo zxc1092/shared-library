@@ -62,7 +62,7 @@ const Navbar = ({ color }: Props) => {
               onClick={handleOpenNavMenu}
               color="inherit"
             >
-              <MenuIcon />
+              Menu
             </IconButton>
             <Menu
               id="menu-appbar"
@@ -111,10 +111,12 @@ const Navbar = ({ color }: Props) => {
             {pages.map((page) => (
               <Button
                 key={page}
+                variant="contained"
+                color={color}
                 onClick={handleCloseNavMenu}
-                sx={{ my: 2, color: "white", display: "block" }}
-                label={page}
-              />
+              >
+                {page}
+              </Button>
             ))}
           </Box>
         </Toolbar>

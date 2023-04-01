@@ -1,9 +1,20 @@
-import { ComponentsVariants } from "@mui/material";
+import { ComponentsOverrides, ComponentsVariants } from "@mui/material";
 
 export const acuraButton: {
-  MuiButton: { variants: ComponentsVariants["MuiButton"] };
+  MuiButton: {
+    styleOverrides: ComponentsOverrides["MuiButton"];
+    variants: ComponentsVariants["MuiButton"];
+  };
 } = {
   MuiButton: {
+    styleOverrides: {
+      root: {
+        "&>a": {
+          color: "inherit",
+          textDecoration: "none",
+        },
+      },
+    },
     variants: [
       {
         props: { variant: "contained" },

@@ -7,18 +7,19 @@ import {
 
 type TTypographyBaseProps = Pick<
   MuiTypographyProps,
-  "align" | "variant" | "color" | "noWrap"
+  "align" | "variant" | "color" | "noWrap" | "children"
 >;
 
 export interface ITypographyProps extends TTypographyBaseProps {
-  label?: string;
-  isDark?: boolean;
-  onClick?: () => void;
+  component?: React.ElementType;
 }
 
-const Typography = ({ label, isDark, ...rest }: ITypographyProps) => {
-  const theme = useTheme();
-  return <MuiTypography {...rest}>{label || theme.name}</MuiTypography>;
+const Typography = ({ children, component, ...rest }: ITypographyProps) => {
+  return (
+    <MuiTypography {...rest} component={component || "span"}>
+      {children}
+    </MuiTypography>
+  );
 };
 
 export default Typography;

@@ -1,29 +1,25 @@
-import React from "react";
-import Box from "@mui/material/Box";
+import React, { ReactNode } from "react";
 import Grid from "@mui/material/Grid";
-import Link from "@mui/material/Link";
-import Paper from "@mui/material/Paper";
 import useTheme from "@mui/material/styles/useTheme";
-import Typography from "@mui/material/Typography";
 import CardActionArea from "@mui/material/CardActionArea";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
+import Typography from "../../components/Typography";
 
 interface Props {
   promoCards: {
-    title: string;
-    description: string;
-    date: string;
-    image: string;
-    imageText: string;
+    title: ReactNode;
+    description: ReactNode;
+    date: ReactNode;
+    ctaRows: {
+      buttonContent: ReactNode;
+      buttonVariant: "contained" | "outlined" | "text";
+      color: "primary" | "secondary";
+      isLink: boolean;
+    }[];
   }[];
 }
-
-const headerColor = {
-  acura: "secondary",
-  honda: "primary",
-};
 
 const PromoCards = ({ promoCards }: Props) => {
   const theme = useTheme();
@@ -34,25 +30,32 @@ const PromoCards = ({ promoCards }: Props) => {
         <Grid item xs={12} md={6}>
           <CardActionArea component="a" href="#">
             <Card sx={{ display: "flex" }}>
-              <CardContent sx={{ flex: 1 }}>
-                <Typography component="h2" variant="h5">
+              <CardContent
+                sx={{
+                  flex: 1,
+                  display: "flex",
+                  flexDirection: "column",
+                  gap: 1,
+                }}
+              >
+                <Typography component="h3" variant="title3">
                   {post.title}
                 </Typography>
-                <Typography variant="subtitle1" color="text.secondary">
+                <Typography component="span" variant="body2">
                   {post.date}
                 </Typography>
-                <Typography variant="subtitle1" paragraph>
+                <Typography component="p" variant="body3">
                   {post.description}
                 </Typography>
-                <Typography variant="subtitle1" color="primary">
+                <Typography component="p" variant="body1" color="primary">
                   Continue reading...
                 </Typography>
               </CardContent>
               <CardMedia
                 component="img"
                 sx={{ width: 160, display: { xs: "none", sm: "block" } }}
-                image={post.image}
-                alt={post.imageText}
+                image="https://source.unsplash.com/random"
+                alt="random"
               />
             </Card>
           </CardActionArea>

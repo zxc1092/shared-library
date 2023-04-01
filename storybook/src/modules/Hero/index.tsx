@@ -1,76 +1,76 @@
-import React from "react";
-import Box from "@mui/material/Box";
-import Grid from "@mui/material/Grid";
-import Link from "@mui/material/Link";
+import React, { ReactChildren, ReactNode } from "react";
 import Paper from "@mui/material/Paper";
 import useTheme from "@mui/material/styles/useTheme";
-import Typography from "@mui/material/Typography";
-import Button from "@mui/material/Button";
+import Image from "mui-image";
+import Stack from "@mui/material/Stack";
+import Typography from "../../components/Typography";
+import Button from "../../components/Button";
 
 interface Props {
-  title: string;
-  description: string;
+  title: ReactNode;
+  description: ReactNode;
   image: string;
   imageText: string;
-  linkText: string;
-  linkVariant: "contained" | "outlined" | "text";
+  ctaRow: {
+    buttonContent: ReactNode;
+    buttonVariant: "contained" | "outlined" | "text";
+    color: "primary" | "secondary";
+    isLink: boolean;
+  }[];
+  color: string;
 }
-
-const headerColor = {
-  acura: "secondary",
-  honda: "primary",
-};
 
 const Hero = ({
   title,
   description,
   image,
   imageText,
-  linkText,
-  linkVariant,
+  ctaRow,
+  color,
 }: Props) => {
-  const theme = useTheme();
+  const handleHeroClick = () => {
+    alert("Hero Action");
+  };
 
   return (
     <Paper
       sx={{
         position: "relative",
         backgroundColor: "grey.800",
-        color: "#fff",
+        color: color,
         mb: 4,
-        backgroundSize: "cover",
-        backgroundRepeat: "no-repeat",
-        backgroundPosition: "center",
-        backgroundImage: `url(${image})`,
       }}
     >
-      <img style={{ display: "none" }} src={image} alt={imageText} />
-      <Grid container>
-        <Grid item md={6}>
-          <Box
-            sx={{
-              position: "relative",
-              p: { xs: 3, md: 6 },
-              pr: { md: 0 },
-            }}
-          >
-            <Typography
-              component="h1"
-              variant="h3"
-              color="inherit"
-              gutterBottom
+      <Image src={image} alt={imageText} width="100%" height="400px" />
+      <Stack
+        justifyContent="center"
+        alignItems="flex-start"
+        position="absolute"
+        top="0"
+        p={5}
+        height="100%"
+        width="40%"
+        gap={2}
+      >
+        <Typography component="h1" variant="title1" color="inherit">
+          {title}
+        </Typography>
+        <Typography variant="body1" color="inherit">
+          {description}
+        </Typography>
+        <Stack direction="row" gap={2}>
+          {ctaRow.map(({ buttonVariant, buttonContent, isLink, color }) => (
+            <Button
+              variant={buttonVariant}
+              onClick={isLink ? undefined : handleHeroClick}
+              color={color}
+              isLink={isLink}
             >
-              {title}
-            </Typography>
-            <Typography variant="h5" color="inherit" paragraph>
-              {description}
-            </Typography>
-            <Button variant={linkVariant} href="#">
-              {linkText}
+              {buttonContent}
             </Button>
-          </Box>
-        </Grid>
-      </Grid>
+          ))}
+        </Stack>
+      </Stack>
     </Paper>
   );
 };

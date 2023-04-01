@@ -1,11 +1,11 @@
 export default {
   breakpoints: {
     values: {
-      xs: 550,
-      sm: 768,
-      md: 1024,
-      lg: 1400,
-      xl: 1800,
+      xs: 0,
+      sm: 550,
+      md: 768,
+      lg: 1024,
+      xl: 1400,
     },
   },
 };

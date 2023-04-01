@@ -7,23 +7,18 @@ import {
 
 type TButtonBaseProps = Pick<
   MuiButtonProps,
-  "variant" | "size" | "color" | "sx"
+  "variant" | "size" | "color" | "children" | "onClick"
 >;
 
 export interface IButtonProps extends TButtonBaseProps {
-  label?: string;
-  isDark?: boolean;
-  onClick?: () => void;
+  isLink?: boolean;
 }
 
-const Button = ({ label, isDark, ...rest }: IButtonProps) => {
-  const theme = useTheme();
+const Button = ({ children, isLink, ...rest }: IButtonProps) => {
   return (
-    <>
-      <MuiButton disableRipple {...rest}>
-        {label || theme.name}
-      </MuiButton>
-    </>
+    <MuiButton component={isLink ? "span" : "button"} disableRipple {...rest}>
+      {children}
+    </MuiButton>
   );
 };
 

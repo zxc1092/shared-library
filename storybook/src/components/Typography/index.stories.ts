@@ -28,7 +28,7 @@ export default {
 export const Base = {
   args: {
     variant: "title1",
-    label: "Obsess, Innovate, Repeat",
+    children: "Obsess, Innovate, Repeat",
   },
 };
 
@@ -42,7 +42,7 @@ export const Title1 = {
   },
   args: {
     variant: "title2",
-    label: "Obsess, Innovate, Repeat",
+    children: "Obsess, Innovate, Repeat",
   },
 };
 
@@ -56,7 +56,7 @@ export const Title3 = {
   },
   args: {
     variant: "title3",
-    label: "Obsess, Innovate, Repeat",
+    children: "Obsess, Innovate, Repeat",
   },
 };
 
@@ -70,7 +70,7 @@ export const Title4 = {
   },
   args: {
     variant: "title4",
-    label: "Obsess, Innovate, Repeat",
+    children: "Obsess, Innovate, Repeat",
   },
 };
 
@@ -84,7 +84,7 @@ export const Title5 = {
   },
   args: {
     variant: "title5",
-    label: "Obsess, Innovate, Repeat",
+    children: "Obsess, Innovate, Repeat",
   },
 };
 
@@ -98,7 +98,7 @@ export const Body1 = {
   },
   args: {
     variant: "body1",
-    label: "Obsess, Innovate, Repeat",
+    children: "Obsess, Innovate, Repeat",
   },
 };
 
@@ -112,7 +112,7 @@ export const Body2 = {
   },
   args: {
     variant: "body2",
-    label: "Obsess, Innovate, Repeat",
+    children: "Obsess, Innovate, Repeat",
   },
 };
 
@@ -126,7 +126,7 @@ export const Body3 = {
   },
   args: {
     variant: "body3",
-    label: "Obsess, Innovate, Repeat",
+    children: "Obsess, Innovate, Repeat",
   },
 };
 
@@ -140,7 +140,7 @@ export const Body4 = {
   },
   args: {
     variant: "body4",
-    label: "Obsess, Innovate, Repeat",
+    children: "Obsess, Innovate, Repeat",
   },
 };
 
@@ -154,6 +154,6 @@ export const Body5 = {
   },
   args: {
     variant: "body5",
-    label: "Obsess, Innovate, Repeat",
+    children: "Obsess, Innovate, Repeat",
   },
 };

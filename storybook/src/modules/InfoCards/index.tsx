@@ -1,36 +1,31 @@
-import React from "react";
+import React, { ReactNode } from "react";
 import Grid from "@mui/material/Grid";
 import useTheme from "@mui/material/styles/useTheme";
-import Typography from "@mui/material/Typography";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
-import Button from "@mui/material/Button";
 import CardActions from "@mui/material/CardActions";
+import Button from "../../components/Button";
+import Typography from "../../components/Typography";
 
 interface Props {
   cards: {
-    title: string;
-    description: string;
+    title: ReactNode;
+    description: ReactNode;
     ctaRows: {
-      text: string;
-      variant: "contained" | "outlined" | "text";
+      buttonContent: ReactNode;
+      buttonVariant: "contained" | "outlined" | "text";
+      color: "primary" | "secondary";
+      isLink: boolean;
     }[];
   }[];
 }
 
-const headerColor = {
-  acura: "secondary",
-  honda: "primary",
-};
-
 const infoCards = ({ cards }: Props) => {
-  const theme = useTheme();
-
   return (
     <Grid container spacing={4}>
-      {cards.map((card) => (
-        <Grid item key={card.title} xs={12} sm={6} md={4}>
+      {cards.map((card, index) => (
+        <Grid item key={index} xs={12} sm={6} md={4}>
           <Card
             sx={{
               height: "100%",
@@ -43,16 +38,29 @@ const infoCards = ({ cards }: Props) => {
               image="https://source.unsplash.com/random"
               alt="random"
             />
-            <CardContent sx={{ flexGrow: 1 }}>
-              <Typography gutterBottom variant="h5" component="h2">
+            <CardContent
+              sx={{
+                display: "flex",
+                flexDirection: "column",
+                flexGrow: 1,
+                gap: 1,
+              }}
+            >
+              <Typography variant="title3" component="h3">
                 {card.title}
               </Typography>
-              <Typography>{card.description}</Typography>
+              <Typography variant="body2" component="p">
+                {card.description}
+              </Typography>
             </CardContent>
             <CardActions>
-              {card.ctaRows?.map((cta) => (
-                <Button variant={cta.variant}>{cta.text}</Button>
-              ))}
+              {card.ctaRows?.map(
+                ({ buttonContent, buttonVariant, isLink, color }) => (
+                  <Button variant={buttonVariant} isLink={isLink} color={color}>
+                    {buttonContent}
+                  </Button>
+                )
+              )}
             </CardActions>
           </Card>
         </Grid>

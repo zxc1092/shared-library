@@ -1,9 +1,10 @@
-import Hero from ".";
 import { Meta, Story } from "@storybook/react";
+import PromoCards from ".";
+import homepageData from "../../mockData";
 
 export default {
-  title: "Modules/Hero",
-  component: Hero,
+  title: "Modules/PromoCards",
+  component: PromoCards,
   // This component will have an automatically generated Autodocs entry: https://storybook.js.org/docs/7.0/react/writing-docs/docs-page
   tags: ["autodocs"],
   parameters: {
@@ -14,11 +15,6 @@ export default {
 
 export const Primary = {
   args: {
-    title: "Title of a longer featured blog post",
-    description:
-      "Multiple lines of text that form the lede, informing new readers quickly and efficiently about what's most interesting in this post's contents.",
-    image: "https://source.unsplash.com/random",
-    imageText: "main image description",
-    linkText: "Continue reading…",
+    promoCards: homepageData.promoCards,
   },
 };

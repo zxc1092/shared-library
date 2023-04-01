@@ -1,45 +1,44 @@
-import React from "react";
-import Box from "@mui/material/Box";
-import useTheme from "@mui/material/styles/useTheme";
-import Typography from "@mui/material/Typography";
+import React, { ReactNode } from "react";
 import Container from "@mui/material/Container";
-import Button from "@mui/material/Button";
 import Stack from "@mui/material/Stack";
+import Typography from "../../components/Typography";
+import Button from "../../components/Button";
 
 interface Props {
-  title: string;
-  description: string;
+  title: ReactNode;
+  description: ReactNode;
   ctaRows: {
-    text: string;
-    variant: "contained" | "outlined" | "text";
+    buttonContent: ReactNode;
+    buttonVariant: "contained" | "outlined" | "text";
+    color: "primary" | "secondary";
+    isLink: boolean;
   }[];
 }
 
-const headerColor = {
-  acura: "secondary",
-  honda: "primary",
-};
-
 const HeroText = ({ title, description, ctaRows }: Props) => {
-  const theme = useTheme();
-
   return (
     <Container maxWidth="sm" sx={{ p: 4 }}>
       <Typography
-        component="h1"
-        variant="h2"
+        component="h2"
+        variant="title1"
         align="center"
         color="text.primary"
-        gutterBottom
       >
         {title}
       </Typography>
-      <Typography variant="h5" align="center" color="text.secondary" paragraph>
+      <Typography
+        component="p"
+        variant="body1"
+        align="center"
+        color="secondary"
+      >
         {description}
       </Typography>
       <Stack sx={{ pt: 4 }} direction="row" spacing={2} justifyContent="center">
-        {ctaRows?.map((cta) => (
-          <Button variant={cta.variant}>{cta.text}</Button>
+        {ctaRows?.map(({ buttonContent, buttonVariant, color, isLink }) => (
+          <Button variant={buttonVariant} color={color} isLink={isLink}>
+            {buttonContent}
+          </Button>
         ))}
       </Stack>
     </Container>

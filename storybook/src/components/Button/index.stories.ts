@@ -22,7 +22,13 @@ export default {
 };
 
 // More on writing stories with args: https://storybook.js.org/docs/7.0/react/writing-stories/args
-export const Base = {};
+export const Base = {
+  args: {
+    color: "primary",
+    variant: "contained",
+    children: "Button",
+  },
+};
 
 // More on writing stories with args: https://storybook.js.org/docs/7.0/react/writing-stories/args
 export const Primary = {
@@ -36,7 +42,7 @@ export const Primary = {
   args: {
     color: "primary",
     variant: "contained",
-    label: "",
+    children: "Button",
   },
 };
 
@@ -52,6 +58,6 @@ export const Secondary = {
   args: {
     color: "secondary",
     variant: "contained",
-    label: "",
+    children: "Button",
   },
 };
