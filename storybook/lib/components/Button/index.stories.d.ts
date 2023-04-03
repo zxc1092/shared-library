@@ -1,6 +1,7 @@
+import Button from ".";
 declare const _default: {
     title: string;
-    component: ({ label, isDark, ...rest }: import(".").IButtonProps) => JSX.Element;
+    component: typeof Button;
     tags: never[];
     argTypes: {
         color: {
@@ -18,7 +19,13 @@ declare const _default: {
     };
 };
 export default _default;
-export declare const Base: {};
+export declare const Base: {
+    args: {
+        color: string;
+        variant: string;
+        children: string;
+    };
+};
 export declare const Primary: {
     argTypes: {
         color: {
@@ -30,7 +37,7 @@ export declare const Primary: {
     args: {
         color: string;
         variant: string;
-        label: string;
+        children: string;
     };
 };
 export declare const Secondary: {
@@ -44,6 +51,6 @@ export declare const Secondary: {
     args: {
         color: string;
         variant: string;
-        label: string;
+        children: string;
     };
 };

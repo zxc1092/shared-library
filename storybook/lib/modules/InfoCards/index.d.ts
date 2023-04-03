@@ -1,10 +1,13 @@
+import { ReactNode } from "react";
 interface Props {
     cards: {
-        title: string;
-        description: string;
+        title: ReactNode;
+        description: ReactNode;
         ctaRows: {
-            text: string;
-            variant: "contained" | "outlined" | "text";
+            buttonContent: ReactNode;
+            buttonVariant: "contained" | "outlined" | "text";
+            color: "primary" | "secondary";
+            isLink: boolean;
         }[];
     }[];
 }

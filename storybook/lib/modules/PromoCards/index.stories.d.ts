@@ -8,6 +8,17 @@ export declare const Primary: {
             description: string;
             image: string;
             imageLabel: string;
+            ctaRows: ({
+                buttonContent: string;
+                buttonVariant: "contained";
+                color: "primary";
+                isLink: boolean;
+            } | {
+                buttonContent: JSX.Element;
+                buttonVariant: "contained";
+                color: "secondary";
+                isLink: boolean;
+            })[];
         }[];
     };
 };

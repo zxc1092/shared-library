@@ -1,10 +1,16 @@
+import { ReactNode } from "react";
 interface Props {
-    title: string;
-    description: string;
+    title: ReactNode;
+    description: ReactNode;
     image: string;
     imageText: string;
-    linkText: string;
-    linkVariant: "contained" | "outlined" | "text";
+    ctaRow: {
+        buttonContent: ReactNode;
+        buttonVariant: "contained" | "outlined" | "text";
+        color: "primary" | "secondary";
+        isLink: boolean;
+    }[];
+    color: string;
 }
-declare const Hero: ({ title, description, image, imageText, linkText, linkVariant, }: Props) => JSX.Element;
+declare const Hero: ({ title, description, image, imageText, ctaRow, color, }: Props) => JSX.Element;
 export default Hero;

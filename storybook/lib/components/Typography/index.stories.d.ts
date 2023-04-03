@@ -1,6 +1,6 @@
 declare const _default: {
     title: string;
-    component: ({ label, isDark, ...rest }: import(".").ITypographyProps) => JSX.Element;
+    component: ({ children, component, ...rest }: import(".").ITypographyProps) => JSX.Element;
     tags: never[];
     argTypes: {
         variant: {
@@ -13,7 +13,7 @@ export default _default;
 export declare const Base: {
     args: {
         variant: string;
-        label: string;
+        children: string;
     };
 };
 export declare const Title1: {
@@ -26,7 +26,7 @@ export declare const Title1: {
     };
     args: {
         variant: string;
-        label: string;
+        children: string;
     };
 };
 export declare const Title3: {
@@ -39,7 +39,7 @@ export declare const Title3: {
     };
     args: {
         variant: string;
-        label: string;
+        children: string;
     };
 };
 export declare const Title4: {
@@ -52,7 +52,7 @@ export declare const Title4: {
     };
     args: {
         variant: string;
-        label: string;
+        children: string;
     };
 };
 export declare const Title5: {
@@ -65,7 +65,7 @@ export declare const Title5: {
     };
     args: {
         variant: string;
-        label: string;
+        children: string;
     };
 };
 export declare const Body1: {
@@ -78,7 +78,7 @@ export declare const Body1: {
     };
     args: {
         variant: string;
-        label: string;
+        children: string;
     };
 };
 export declare const Body2: {
@@ -91,7 +91,7 @@ export declare const Body2: {
     };
     args: {
         variant: string;
-        label: string;
+        children: string;
     };
 };
 export declare const Body3: {
@@ -104,7 +104,7 @@ export declare const Body3: {
     };
     args: {
         variant: string;
-        label: string;
+        children: string;
     };
 };
 export declare const Body4: {
@@ -117,7 +117,7 @@ export declare const Body4: {
     };
     args: {
         variant: string;
-        label: string;
+        children: string;
     };
 };
 export declare const Body5: {
@@ -130,6 +130,6 @@ export declare const Body5: {
     };
     args: {
         variant: string;
-        label: string;
+        children: string;
     };
 };

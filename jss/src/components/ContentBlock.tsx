@@ -1,7 +1,7 @@
 // import { Button } from '@gilbarbara/components/lib';
 import { Text, RichText, Field, withDatasourceCheck } from '@sitecore-jss/sitecore-jss-nextjs';
 import { ComponentProps } from 'lib/component-props';
-import { Button } from 'storybook2';
+import { Button } from 'storybook';
 
 type ContentBlockProps = ComponentProps & {
   fields: {
@@ -10,13 +10,13 @@ type ContentBlockProps = ComponentProps & {
   };
 };
 const post = {
-  title: "Title of a longer featured blog post",
+  title: 'Title of a longer featured blog post',
   description:
     "Multiple lines of text that form the lede, informing new readers quickly and efficiently about what's most interesting in this post's contents.",
-  image: "https://source.unsplash.com/random",
-  imageText: "main image description",
-  linkText: "Continue reading…",
-  linkVariant: "contained" as "contained",
+  image: 'https://source.unsplash.com/random',
+  imageText: 'main image description',
+  linkText: 'Continue reading…',
+  linkVariant: 'contained' as 'contained',
 };
 
 /**
@@ -26,9 +26,8 @@ const post = {
  */
 const ContentBlock = ({ fields }: ContentBlockProps): JSX.Element => (
   <div className="contentBlock">
-    <Button>
-      <Text tag="h2" className="contentTitle" field={fields.heading} />
-    </Button>
+    <Button>text</Button>
+    <Text tag="h2" className="contentTitle" field={fields.heading} />
     <RichText className="contentDescription" field={fields.content} />
   </div>
 );

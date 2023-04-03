@@ -14,12 +14,12 @@ export interface IButtonProps extends TButtonBaseProps {
   isLink?: boolean;
 }
 
-const Button = ({ children, isLink, ...rest }: IButtonProps) => {
+function Button({ children, isLink, ...rest }: IButtonProps) {
   return (
     <MuiButton component={isLink ? "span" : "button"} disableRipple {...rest}>
       {children}
     </MuiButton>
   );
-};
+}
 
 export default Button;
