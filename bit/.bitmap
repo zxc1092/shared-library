@@ -10,94 +10,34 @@
 
 {
     "theme/theme-config-1": {
-        "scope": "",
-        "version": "",
+        "scope": "zxc1092.mui",
+        "version": "0.0.1",
         "mainFile": "index.ts",
-        "rootDir": "mui/theme/theme-config-1",
-        "nextVersion": {
-            "version": "patch",
-            "message": "Create button and themes",
-            "username": "zxc1092",
-            "email": "steven.cerdas@wundermanthompson.com"
-        },
-        "config": {
-            "teambit.react/react": {},
-            "teambit.envs/envs": {
-                "env": "teambit.react/react"
-            }
-        }
+        "rootDir": "mui/theme/theme-config-1"
     },
     "theme/theme-config-2": {
-        "scope": "",
-        "version": "",
+        "scope": "zxc1092.mui",
+        "version": "0.0.1",
         "mainFile": "index.ts",
-        "rootDir": "mui/theme/theme-config-2",
-        "nextVersion": {
-            "version": "patch",
-            "message": "Create button and themes",
-            "username": "zxc1092",
-            "email": "steven.cerdas@wundermanthompson.com"
-        },
-        "config": {
-            "teambit.react/react": {},
-            "teambit.envs/envs": {
-                "env": "teambit.react/react"
-            }
-        }
+        "rootDir": "mui/theme/theme-config-2"
     },
     "theme/theme-provider": {
-        "scope": "",
-        "version": "",
+        "scope": "zxc1092.mui",
+        "version": "0.0.1",
         "mainFile": "index.ts",
-        "rootDir": "mui/theme/theme-provider",
-        "nextVersion": {
-            "version": "patch",
-            "message": "Create button and themes",
-            "username": "zxc1092",
-            "email": "steven.cerdas@wundermanthompson.com"
-        },
-        "config": {
-            "teambit.react/react": {},
-            "teambit.envs/envs": {
-                "env": "teambit.react/react"
-            }
-        }
+        "rootDir": "mui/theme/theme-provider"
     },
     "ui/button": {
-        "scope": "",
-        "version": "",
+        "scope": "zxc1092.mui",
+        "version": "0.0.1",
         "mainFile": "index.ts",
-        "rootDir": "mui/ui/button",
-        "nextVersion": {
-            "version": "patch",
-            "message": "Create button and themes",
-            "username": "zxc1092",
-            "email": "steven.cerdas@wundermanthompson.com"
-        },
-        "config": {
-            "teambit.react/react": {},
-            "teambit.envs/envs": {
-                "env": "teambit.react/react"
-            }
-        }
+        "rootDir": "mui/ui/button"
     },
     "ui/typography": {
-        "scope": "",
-        "version": "",
+        "scope": "zxc1092.mui",
+        "version": "0.0.1",
         "mainFile": "index.ts",
-        "rootDir": "mui/ui/typography",
-        "nextVersion": {
-            "version": "patch",
-            "message": "Create button and themes",
-            "username": "zxc1092",
-            "email": "steven.cerdas@wundermanthompson.com"
-        },
-        "config": {
-            "teambit.react/react": {},
-            "teambit.envs/envs": {
-                "env": "teambit.react/react"
-            }
-        }
+        "rootDir": "mui/ui/typography"
     },
     "$schema-version": "15.0.0"
 }
