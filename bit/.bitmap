@@ -9,6 +9,78 @@
  */
 
 {
+    "modules/hero": {
+        "scope": "",
+        "version": "",
+        "mainFile": "index.ts",
+        "rootDir": "mui/modules/hero",
+        "config": {
+            "teambit.react/react": {},
+            "teambit.envs/envs": {
+                "env": "teambit.react/react"
+            }
+        }
+    },
+    "modules/hero-text": {
+        "scope": "",
+        "version": "",
+        "mainFile": "index.ts",
+        "rootDir": "mui/modules/hero-text",
+        "config": {
+            "teambit.react/react": {},
+            "teambit.envs/envs": {
+                "env": "teambit.react/react"
+            }
+        }
+    },
+    "modules/info-cards": {
+        "scope": "",
+        "version": "",
+        "mainFile": "index.ts",
+        "rootDir": "mui/modules/info-cards",
+        "config": {
+            "teambit.react/react": {},
+            "teambit.envs/envs": {
+                "env": "teambit.react/react"
+            }
+        }
+    },
+    "modules/navbar": {
+        "scope": "",
+        "version": "",
+        "mainFile": "index.ts",
+        "rootDir": "mui/modules/navbar",
+        "config": {
+            "teambit.react/react": {},
+            "teambit.envs/envs": {
+                "env": "teambit.react/react"
+            }
+        }
+    },
+    "modules/promo-cards": {
+        "scope": "",
+        "version": "",
+        "mainFile": "index.ts",
+        "rootDir": "mui/modules/promo-cards",
+        "config": {
+            "teambit.react/react": {},
+            "teambit.envs/envs": {
+                "env": "teambit.react/react"
+            }
+        }
+    },
+    "pages/home": {
+        "scope": "",
+        "version": "",
+        "mainFile": "index.ts",
+        "rootDir": "mui/pages/home",
+        "config": {
+            "teambit.react/react": {},
+            "teambit.envs/envs": {
+                "env": "teambit.react/react"
+            }
+        }
+    },
     "theme/theme-config-1": {
         "scope": "zxc1092.mui",
         "version": "0.0.1",

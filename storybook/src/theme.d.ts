@@ -1,7 +1,6 @@
 declare module "@mui/material/styles" {
-  interface CustomTheme {
-    name: string;
-  }
+  // Add any aditional properties to the theme dictionary
+  interface CustomTheme {}
   interface TypographyVariants {
     title1: React.CSSProperties;
     title2: React.CSSProperties;

@@ -34,6 +34,9 @@
     "@mui/material": "^5.11.13",
     "@mui/styles": "^5.11.13",
     "@sitecore-jss/sitecore-jss-nextjs": "^20.1.3",
+    "@zxc1092/mui.theme.theme-config-1": "^0.0.1",
+    "@zxc1092/mui.theme.theme-provider": "^0.0.1",
+    "@zxc1092/mui.ui.button": "^0.0.1",
     "bootstrap": "^4.3.1",
     "graphql": "~15.8.0",
     "graphql-tag": "^2.11.0",
@@ -41,8 +44,7 @@
     "next-localization": "^0.10.0",
     "nprogress": "~0.2.0",
     "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "storybook2": "../../storybook2"
+    "react-dom": "^17.0.2"
   },
   "devDependencies": {
     "@graphql-codegen/cli": "^1.19.1",
