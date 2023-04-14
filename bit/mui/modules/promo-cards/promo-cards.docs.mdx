@@ -7,12 +7,107 @@ import { PromoCards } from './promo-cards';
 A component that does something special and renders text in a div.
 
 ### Component usage
+
 ```js
-<PromoCards>Hello world!</PromoCards>
+<PromoCards
+  cards={[
+    {
+      title: 'Post title',
+      date: 'Nov 11',
+      description:
+        'This is a wider card with supporting text below as a natural lead-in to additional content.',
+      image: 'https://source.unsplash.com/random',
+      imageLabel: 'Image Text',
+      ctaRows: [
+        {
+          buttonContent: 'Button',
+          buttonVariant: 'contained',
+          color: 'primary',
+          isLink: false,
+        },
+        {
+          buttonContent: <a href="google.com">Link</a>,
+          buttonVariant: 'contained',
+          color: 'secondary',
+          isLink: true,
+        },
+      ],
+    },
+    {
+      title: 'Featured post',
+      date: 'Nov 12',
+      description:
+        'This is a wider card with supporting text below as a natural lead-in to additional content.',
+      image: 'https://source.unsplash.com/random',
+      imageLabel: 'Image Text',
+      ctaRows: [
+        {
+          buttonContent: 'Button',
+          buttonVariant: 'contained',
+          color: 'primary',
+          isLink: false,
+        },
+        {
+          buttonContent: <a href="google.com">Link</a>,
+          buttonVariant: 'contained',
+          color: 'secondary',
+          isLink: true,
+        },
+      ],
+    },
+  ]}
+/>
 ```
 
 ### Render hello world!
 
 ```js live
-<PromoCards>Hello world!</PromoCards>
+<PromoCards
+  cards={[
+    {
+      title: 'Post title',
+      date: 'Nov 11',
+      description:
+        'This is a wider card with supporting text below as a natural lead-in to additional content.',
+      image: 'https://source.unsplash.com/random',
+      imageLabel: 'Image Text',
+      ctaRows: [
+        {
+          buttonContent: 'Button',
+          buttonVariant: 'contained',
+          color: 'primary',
+          isLink: false,
+        },
+        {
+          buttonContent: <a href="google.com">Link</a>,
+          buttonVariant: 'contained',
+          color: 'secondary',
+          isLink: true,
+        },
+      ],
+    },
+    {
+      title: 'Featured post',
+      date: 'Nov 12',
+      description:
+        'This is a wider card with supporting text below as a natural lead-in to additional content.',
+      image: 'https://source.unsplash.com/random',
+      imageLabel: 'Image Text',
+      ctaRows: [
+        {
+          buttonContent: 'Button',
+          buttonVariant: 'contained',
+          color: 'primary',
+          isLink: false,
+        },
+        {
+          buttonContent: <a href="google.com">Link</a>,
+          buttonVariant: 'contained',
+          color: 'secondary',
+          isLink: true,
+        },
+      ],
+    },
+  ]}
+/>
 ```

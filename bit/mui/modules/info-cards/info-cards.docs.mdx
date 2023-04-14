@@ -7,12 +7,141 @@ import { InfoCards } from './info-cards';
 A component that does something special and renders text in a div.
 
 ### Component usage
+
 ```js
-<InfoCards>Hello world!</InfoCards>
+const cards = [
+  {
+    title: 'Post title',
+    description:
+      'This is a wider card with supporting text below,
+    image: 'https://source.unsplash.com/random',
+    imageLabel: 'Image Text',
+    ctaRows: [
+      {
+        buttonContent: 'Button',
+        buttonVariant: 'contained',
+        color: 'primary',
+        isLink: false,
+      },
+      {
+        buttonContent: <a href="google.com">Link</a>,
+        buttonVariant: 'contained',
+        color: 'secondary',
+        isLink: true,
+      },
+    ],
+  },
+  {
+    title: 'Featured post',
+    description:
+      'This is a wider card with supporting text below,
+    image: 'https://source.unsplash.com/random',
+    imageLabel: 'Image Text',
+    ctaRows: [
+      {
+        buttonContent: 'Button',
+        buttonVariant: 'contained',
+        color: 'primary',
+        isLink: false,
+      },
+      {
+        buttonContent: <a href="google.com">Link</a>,
+        buttonVariant: 'contained',
+        color: 'secondary',
+        isLink: true,
+      },
+    ],
+  },
+  {
+    title: 'Post title',
+    description:
+      'This is a wider card with supporting text below,
+    image: 'https://source.unsplash.com/random',
+    imageLabel: 'Image Text',
+    ctaRows: [
+      {
+        buttonContent: 'Button',
+        buttonVariant: 'contained',
+        color: 'primary',
+        isLink: false,
+      },
+      {
+        buttonContent: <a href="google.com">Link</a>,
+        buttonVariant: 'contained',
+        color: 'secondary',
+        isLink: true,
+      },
+    ],
+  },
+];
+<InfoCards cards={cards} />
 ```
 
 ### Render hello world!
 
 ```js live
-<InfoCards>Hello world!</InfoCards>
+<InfoCards
+  cards={[
+    {
+      title: 'Post title',
+      description: 'This is a wider card with supporting text below',
+      image: 'https://source.unsplash.com/random',
+      imageLabel: 'Image Text',
+      ctaRows: [
+        {
+          buttonContent: 'Button',
+          buttonVariant: 'contained',
+          color: 'primary',
+          isLink: false,
+        },
+        {
+          buttonContent: <a href="google.com">Link</a>,
+          buttonVariant: 'contained',
+          color: 'secondary',
+          isLink: true,
+        },
+      ],
+    },
+    {
+      title: 'Featured post',
+      description: 'This is a wider card with supporting text below',
+      image: 'https://source.unsplash.com/random',
+      imageLabel: 'Image Text',
+      ctaRows: [
+        {
+          buttonContent: 'Button',
+          buttonVariant: 'contained',
+          color: 'primary',
+          isLink: false,
+        },
+        {
+          buttonContent: <a href="google.com">Link</a>,
+          buttonVariant: 'contained',
+          color: 'secondary',
+          isLink: true,
+        },
+      ],
+    },
+    {
+      title: 'Post title',
+      description: 'This is a wider card with supporting text below',
+      image: 'https://source.unsplash.com/random',
+      imageLabel: 'Image Text',
+      ctaRows: [
+        {
+          buttonContent: 'Button',
+          buttonVariant: 'contained',
+          color: 'primary',
+          isLink: false,
+        },
+        {
+          buttonContent: <a href="google.com">Link</a>,
+          buttonVariant: 'contained',
+          color: 'secondary',
+          isLink: true,
+        },
+      ],
+    },
+  ]}
+/>
 ```

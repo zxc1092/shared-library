@@ -7,12 +7,52 @@ import { HeroText } from './hero-text';
 A component that does something special and renders text in a div.
 
 ### Component usage
+
 ```js
-<HeroText>Hello world!</HeroText>
+const props = {
+  title: 'Album layout',
+  description:
+    'Something short and leading about the collection below—its contents,  the creator, etc. Make it short and sweet, but not too short so folks don&apos;t simply skip over it entirely.',
+  ctaRows: [
+    {
+      buttonContent: 'Button',
+      buttonVariant: 'contained' as 'contained',
+      color: 'primary' as 'primary',
+      isLink: false,
+    },
+    {
+      buttonContent: <a href="google.com">Link</a>,
+      buttonVariant: 'contained' as 'contained',
+      color: 'secondary' as 'secondary',
+      isLink: true,
+    },
+  ],
+};
+
+export const BasicHeroText = () => {
+  return <HeroText {...props} />;
+};
 ```
 
 ### Render hello world!
 
 ```js live
-<HeroText>Hello world!</HeroText>
+<HeroText
+  title="Album layout"
+  description="Something short and leading about the collection below—its contents,  the creator, etc. Make it short and sweet, but not too short so folks don't simply skip over it entirely."
+  ctaRows={[
+    {
+      buttonContent: 'Button',
+      buttonVariant: 'contained',
+      color: 'primary',
+      isLink: false,
+    },
+    {
+      buttonContent: <a href="google.com">Link</a>,
+      buttonVariant: 'contained',
+      color: 'secondary',
+      isLink: true,
+    },
+  ]}
+/>
 ```

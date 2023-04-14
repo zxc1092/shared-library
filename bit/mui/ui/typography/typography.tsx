@@ -53,20 +53,27 @@ declare module '@mui/material/Typography' {
 
 type TTypographyBaseProps = Pick<
   MuiTypographyProps,
-  'align' | 'variant' | 'color' | 'noWrap' | 'children'
+  'align' | 'variant' | 'color' | 'noWrap' | 'children' | 'sx'
 >;
 
 export interface TypographyProps extends TTypographyBaseProps {
   component?: React.ElementType;
+  href?: string;
 }
 
 export const Typography = ({
   children,
   component,
+  href,
   ...rest
 }: TypographyProps) => {
+  const isLink = component === 'a';
   return (
-    <MuiTypography {...rest} component={component || 'span'}>
+    <MuiTypography
+      {...rest}
+      component={component || 'span'}
+      href={isLink ? href : undefined}
+    >
       {children}
     </MuiTypography>
   );

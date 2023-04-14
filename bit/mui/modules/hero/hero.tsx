@@ -50,6 +50,7 @@ export const Hero = ({
         height="100%"
         width="40%"
         gap={2}
+        boxSizing={'border-box'}
       >
         <Typography component="h1" variant="title1" color="inherit">
           {title}

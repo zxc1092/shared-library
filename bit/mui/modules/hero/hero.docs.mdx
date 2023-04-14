@@ -9,11 +9,50 @@ A component that does something special and renders text in a div.
 ### Component usage
 
 ```js
-
+<Hero
+  title='Title of a longer featured blog post'
+  description="Multiple lines of text that form the lede, informing new readers quickly and efficiently about what's most interesting in this post's contents.",
+  image='https://picsum.photos/id/122/2000/500'
+  imageText='main image description'
+  ctaRow={[
+    {
+      buttonContent: 'Button',
+      buttonVariant: 'contained',
+      color: 'primary',
+      isLink: false,
+    },
+    {
+      buttonContent: <a href="google.com">Link</a>,
+      buttonVariant: 'contained',
+      color: 'secondary',
+      isLink: true,
+    },
+  ]}
+  color='white' />;
 ```
 
 ### Render hello world!
 
 ```js live
-
+<Hero
+  title="Title of a longer featured blog post"
+  description="Multiple lines of text that form the lede, informing new readers quickly and efficiently about what's most interesting in this post's contents."
+  image="https://picsum.photos/id/122/2000/500"
+  imageText="main image description"
+  ctaRow={[
+    {
+      buttonContent: 'Button',
+      buttonVariant: 'contained',
+      color: 'primary',
+      isLink: false,
+    },
+    {
+      buttonContent: <a href="google.com">Link</a>,
+      buttonVariant: 'contained',
+      color: 'secondary',
+      isLink: true,
+    },
+  ]}
+  color="white"
+/>
 ```
