@@ -24,7 +24,7 @@ export const InfoCards = ({ cards }: InfoCardsProps) => {
   return (
     <Grid container spacing={4}>
       {cards.map((card, index) => (
-        <Grid item key={index} xs={12} sm={6} md={4}>
+        <Grid item key={`infoCard-${index}`} xs={12} sm={6} md={4}>
           <Card
             sx={{
               height: '100%',
@@ -52,15 +52,6 @@ export const InfoCards = ({ cards }: InfoCardsProps) => {
                 {card.description}
               </Typography>
             </CardContent>
-            <CardActions>
-              {card.ctaRows?.map(
-                ({ buttonContent, buttonVariant, isLink, color }) => (
-                  <Button variant={buttonVariant} isLink={isLink} color={color}>
-                    {buttonContent}
-                  </Button>
-                )
-              )}
-            </CardActions>
           </Card>
         </Grid>
       ))}

@@ -35,11 +35,18 @@ export const HeroText = ({ title, description, ctaRows }: HeroTextProps) => {
         {description}
       </Typography>
       <Stack sx={{ pt: 4 }} direction="row" spacing={2} justifyContent="center">
-        {ctaRows?.map(({ buttonContent, buttonVariant, color, isLink }) => (
-          <Button variant={buttonVariant} color={color} isLink={isLink}>
-            {buttonContent}
-          </Button>
-        ))}
+        {ctaRows?.map(
+          ({ buttonContent, buttonVariant, color, isLink }, index) => (
+            <Button
+              key={`hero-${index}`}
+              variant={buttonVariant}
+              color={color}
+              isLink={isLink}
+            >
+              {buttonContent}
+            </Button>
+          )
+        )}
       </Stack>
     </Container>
   );

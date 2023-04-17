@@ -1,8 +1,4 @@
-// import { Button } from '@gilbarbara/components/lib';
-import { createStyles } from '@mui/material';
 import { Text, RichText, Field, withDatasourceCheck } from '@sitecore-jss/sitecore-jss-nextjs';
-import { themeConfig1 } from '@zxc1092/mui.theme.theme-config-1';
-import { ThemeProvider } from '@zxc1092/mui.theme.theme-provider';
 import { Button } from '@zxc1092/mui.ui.button';
 import { ComponentProps } from 'lib/component-props';
 
@@ -20,9 +16,7 @@ type ContentBlockProps = ComponentProps & {
  */
 const ContentBlock = ({ fields }: ContentBlockProps): JSX.Element => (
   <div className="contentBlock">
-    <ThemeProvider theme={createStyles(themeConfig1)}>
-      <Button variant="contained">Texto</Button>
-    </ThemeProvider>
+    <Button variant="contained">Texto</Button>
     <Text tag="h2" className="contentTitle" field={fields.heading} />
     <RichText className="contentDescription" field={fields.content} />
   </div>

@@ -171,19 +171,17 @@ const homepageData = {
   ],
 };
 
-export interface PageProps {
+export interface HomeProps {
   themeName?: 'acura' | 'honda';
 }
 
-export const Home = ({ themeName }: PageProps) => {
+export const Home = ({ themeName }: HomeProps) => {
   return (
     <article>
       <Navbar color={headerColor[themeName || 'base']} />
       <Container maxWidth="lg" sx={{ mb: 5 }}>
         <Hero {...homepageData.hero} />
-        <PromoCards cards={homepageData.promoCards} />
         <HeroText {...homepageData.heroText} />
-        <InfoCards cards={homepageData.infoCards} />
       </Container>
     </article>
   );

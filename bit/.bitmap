@@ -105,6 +105,18 @@
         "mainFile": "index.ts",
         "rootDir": "mui/ui/button"
     },
+    "ui/jss-button": {
+        "scope": "",
+        "version": "",
+        "mainFile": "index.ts",
+        "rootDir": "mui/ui/jss-button",
+        "config": {
+            "teambit.react/react": {},
+            "teambit.envs/envs": {
+                "env": "teambit.react/react"
+            }
+        }
+    },
     "ui/typography": {
         "scope": "zxc1092.mui",
         "version": "0.0.1",

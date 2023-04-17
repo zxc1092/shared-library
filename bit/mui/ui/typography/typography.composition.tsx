@@ -36,8 +36,10 @@ const baseTypographyVariants: any[] = [
 export const BaseTypography = () => (
   <ThemeProvider>
     <Stack>
-      {baseTypographyVariants.map((variant) => (
-        <Typography variant={variant}>Obsess, Innovate, Repeat</Typography>
+      {baseTypographyVariants.map((variant, index) => (
+        <Typography key={`Base-${index}`} variant={variant}>
+          <span>Base Obsess, Innovate, Repeat: {variant}</span>
+        </Typography>
       ))}
     </Stack>
   </ThemeProvider>
@@ -46,8 +48,10 @@ export const BaseTypography = () => (
 export const Theme1Typography = () => (
   <ThemeProvider theme={createTheme(themeConfig1)}>
     <Stack>
-      {typographyVariants.map((variant) => (
-        <Typography variant={variant}>Obsess, Innovate, Repeat</Typography>
+      {typographyVariants.map((variant, index) => (
+        <Typography key={`Theme1-${index}`} variant={variant}>
+          <span>Theme1 Obsess, Innovate, Repeat: {variant}</span>
+        </Typography>
       ))}
     </Stack>
   </ThemeProvider>
@@ -55,8 +59,10 @@ export const Theme1Typography = () => (
 export const Theme2Typography = () => (
   <ThemeProvider theme={createTheme(themeConfig2)}>
     <Stack>
-      {typographyVariants.map((variant) => (
-        <Typography variant={variant}>Obsess, Innovate, Repeat</Typography>
+      {typographyVariants.map((variant, index) => (
+        <Typography key={`Theme2-${index}`} variant={variant}>
+          <span>Theme2 Obsess, Innovate, Repeat: {variant}</span>
+        </Typography>
       ))}
     </Stack>
   </ThemeProvider>

@@ -67,13 +67,8 @@ export const Typography = ({
   href,
   ...rest
 }: TypographyProps) => {
-  const isLink = component === 'a';
   return (
-    <MuiTypography
-      {...rest}
-      component={component || 'span'}
-      href={isLink ? href : undefined}
-    >
+    <MuiTypography {...rest} component={component || 'span'}>
       {children}
     </MuiTypography>
   );

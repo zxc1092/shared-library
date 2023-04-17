@@ -44,6 +44,7 @@
         "@fontsource/exo-2": "^4.5.11",
         "@learnbit-react/material-ui.theme.my-theme": "0.0.1",
         "@learnbit-react/material-ui.theme.theme-provider": "0.0.1",
+        "@sitecore-jss/sitecore-jss-react": "^21.1.0",
         "@teambit/defender.jest-tester": "0.0.8",
         "@teambit/eslint-config-bit-react": "~0.0.367",
         "@testing-library/jest-dom": "5.16.5",

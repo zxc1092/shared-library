@@ -5,7 +5,7 @@ import Stack from '@mui/material/Stack';
 import { Typography } from '@zxc1092/mui.ui.typography';
 import { Button } from '@zxc1092/mui.ui.button';
 
-interface HeroProps {
+export interface HeroProps {
   title: ReactNode;
   description: ReactNode;
   image: string;
@@ -59,16 +59,19 @@ export const Hero = ({
           {description}
         </Typography>
         <Stack direction="row" gap={2}>
-          {ctaRow.map(({ buttonVariant, buttonContent, isLink, color }) => (
-            <Button
-              variant={buttonVariant}
-              onClick={isLink ? undefined : handleHeroClick}
-              color={color}
-              isLink={isLink}
-            >
-              {buttonContent}
-            </Button>
-          ))}
+          {ctaRow.map(
+            ({ buttonVariant, buttonContent, isLink, color }, index) => (
+              <Button
+                key={`Hero-${index}`}
+                variant={buttonVariant}
+                onClick={isLink ? undefined : handleHeroClick}
+                color={color}
+                isLink={isLink}
+              >
+                {buttonContent}
+              </Button>
+            )
+          )}
         </Stack>
       </Stack>
     </Paper>

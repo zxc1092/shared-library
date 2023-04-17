@@ -1,9 +1,9 @@
 import React from 'react';
 import { render } from '@testing-library/react';
-import { PrimaryOutlinedButton } from './button.composition';
+import { BaseButton } from './button.composition';
 
-test('should render with the correct text', () => {
-  const { getByText } = render(<PrimaryOutlinedButton />);
-  const rendered = getByText('hello world!');
+test('should render with the correct text7', () => {
+  const { getByText } = render(<BaseButton />);
+  const rendered = getByText('contained primary');
   expect(rendered).toBeTruthy();
 });
