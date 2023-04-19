@@ -2,7 +2,6 @@ import React from 'react';
 import {
   Button as MuiButton,
   ButtonProps as MuiButtonProps,
-  useTheme,
 } from '@mui/material';
 import {
   Link,

@@ -1,6 +1,3 @@
-import fonts from './fonts';
-import '@fontsource/dosis';
-
 const typography = {
   typography: {
     title1: {

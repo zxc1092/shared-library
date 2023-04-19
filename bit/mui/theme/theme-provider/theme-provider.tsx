@@ -3,6 +3,8 @@ import {
   ThemeProvider as MuiThemeProvider,
   Theme as MuiTheme,
 } from '@mui/material/styles';
+import '@fontsource/dosis';
+import '@fontsource/exo-2';
 
 export type ThemeSchema = {} & MuiTheme;
 

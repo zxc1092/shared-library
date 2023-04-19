@@ -10,116 +10,74 @@
 
 {
     "modules/hero": {
-        "scope": "",
-        "version": "",
+        "scope": "zxc1092.mui",
+        "version": "0.0.1",
         "mainFile": "index.ts",
-        "rootDir": "mui/modules/hero",
-        "config": {
-            "teambit.react/react": {},
-            "teambit.envs/envs": {
-                "env": "teambit.react/react"
-            }
-        }
+        "rootDir": "mui/modules/hero"
     },
     "modules/hero-text": {
-        "scope": "",
-        "version": "",
+        "scope": "zxc1092.mui",
+        "version": "0.0.1",
         "mainFile": "index.ts",
-        "rootDir": "mui/modules/hero-text",
-        "config": {
-            "teambit.react/react": {},
-            "teambit.envs/envs": {
-                "env": "teambit.react/react"
-            }
-        }
+        "rootDir": "mui/modules/hero-text"
     },
     "modules/info-cards": {
-        "scope": "",
-        "version": "",
+        "scope": "zxc1092.mui",
+        "version": "0.0.1",
         "mainFile": "index.ts",
-        "rootDir": "mui/modules/info-cards",
-        "config": {
-            "teambit.react/react": {},
-            "teambit.envs/envs": {
-                "env": "teambit.react/react"
-            }
-        }
+        "rootDir": "mui/modules/info-cards"
     },
     "modules/navbar": {
-        "scope": "",
-        "version": "",
+        "scope": "zxc1092.mui",
+        "version": "0.0.1",
         "mainFile": "index.ts",
-        "rootDir": "mui/modules/navbar",
-        "config": {
-            "teambit.react/react": {},
-            "teambit.envs/envs": {
-                "env": "teambit.react/react"
-            }
-        }
+        "rootDir": "mui/modules/navbar"
     },
     "modules/promo-cards": {
-        "scope": "",
-        "version": "",
+        "scope": "zxc1092.mui",
+        "version": "0.0.1",
         "mainFile": "index.ts",
-        "rootDir": "mui/modules/promo-cards",
-        "config": {
-            "teambit.react/react": {},
-            "teambit.envs/envs": {
-                "env": "teambit.react/react"
-            }
-        }
+        "rootDir": "mui/modules/promo-cards"
     },
     "pages/home": {
-        "scope": "",
-        "version": "",
+        "scope": "zxc1092.mui",
+        "version": "0.0.1",
         "mainFile": "index.ts",
-        "rootDir": "mui/pages/home",
-        "config": {
-            "teambit.react/react": {},
-            "teambit.envs/envs": {
-                "env": "teambit.react/react"
-            }
-        }
+        "rootDir": "mui/pages/home"
     },
     "theme/theme-config-1": {
         "scope": "zxc1092.mui",
-        "version": "0.0.1",
+        "version": "0.0.2",
         "mainFile": "index.ts",
         "rootDir": "mui/theme/theme-config-1"
     },
     "theme/theme-config-2": {
         "scope": "zxc1092.mui",
-        "version": "0.0.1",
+        "version": "0.0.2",
         "mainFile": "index.ts",
         "rootDir": "mui/theme/theme-config-2"
     },
     "theme/theme-provider": {
         "scope": "zxc1092.mui",
-        "version": "0.0.1",
+        "version": "0.0.2",
         "mainFile": "index.ts",
         "rootDir": "mui/theme/theme-provider"
     },
     "ui/button": {
         "scope": "zxc1092.mui",
-        "version": "0.0.1",
+        "version": "0.0.2",
         "mainFile": "index.ts",
         "rootDir": "mui/ui/button"
     },
     "ui/jss-button": {
-        "scope": "",
-        "version": "",
+        "scope": "zxc1092.mui",
+        "version": "0.0.1",
         "mainFile": "index.ts",
-        "rootDir": "mui/ui/jss-button",
-        "config": {
-            "teambit.react/react": {},
-            "teambit.envs/envs": {
-                "env": "teambit.react/react"
-            }
-        }
+        "rootDir": "mui/ui/jss-button"
     },
     "ui/typography": {
         "scope": "zxc1092.mui",
-        "version": "0.0.1",
+        "version": "0.0.2",
         "mainFile": "index.ts",
         "rootDir": "mui/ui/typography"
     },
