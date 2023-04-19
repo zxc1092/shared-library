@@ -1,6 +1,3 @@
-import fonts from './fonts';
-import '@fontsource/exo-2';
-
 const typography = {
   typography: {
     title1: {

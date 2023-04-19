@@ -1,7 +1,7 @@
 /**
  * this is the main configuration file of your bit workspace.
  * for full documentation, please see: https://bit.dev/docs/workspace/workspace-configuration
- **/{
+ **/ {
   "$schema": "https://static.bit.dev/teambit/schemas/schema.json",
   /**
    * main configuration of the Bit workspace.
@@ -44,9 +44,12 @@
         "@fontsource/exo-2": "^4.5.11",
         "@learnbit-react/material-ui.theme.my-theme": "0.0.1",
         "@learnbit-react/material-ui.theme.theme-provider": "0.0.1",
+        "@open-wc/testing-helpers": "^2.2.1",
         "@sitecore-jss/sitecore-jss-react": "^21.1.0",
         "@teambit/defender.jest-tester": "0.0.8",
         "@teambit/eslint-config-bit-react": "~0.0.367",
+        "@teambit/html.modules.render-template": "^1.0.4",
+        "@teambit/web-components.lit": "^1.0.13",
         "@testing-library/jest-dom": "5.16.5",
         "@typescript-eslint/eslint-plugin": "5.35.1",
         "eslint-import-resolver-node": "0.3.6",
@@ -62,8 +65,8 @@
         "@emotion/styled": "^11.10.6",
         "@mui/material": "5.10.14",
         "@testing-library/react": "^12.1.5",
-        "react": "17.0.2",
-        "react-dom": "17.0.2"
+        "react": "18.0.2",
+        "react-dom": "18.0.2"
       }
     },
     "linkCoreAspects": true
@@ -75,5 +78,11 @@
    * wrap the rule with curly brackets (e.g. `"{ui/*}": {}`)
    * see https://bit.dev/docs/workspace/variants for more info.
    **/
-  "teambit.workspace/variants": {}
+  "teambit.workspace/variants": {},
+  "teambit.generator/generator": {
+    "envs": ["teambit.react/react", "teambit.web-components/lit"]
+  },
+  "teambit.compilation/bundler": {
+    "dedicatedEnvDevServers": ["teambit.html/html"]
+  }
 }

@@ -1,4 +1,3 @@
-import { createTheme } from '@mui/material';
 import palette from './partials/palette';
 import typography from './partials/typography';
 import breakpoints from './partials/breakpoints';
