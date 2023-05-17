@@ -47,6 +47,7 @@
         "@sitecore-jss/sitecore-jss-react": "^21.1.0",
         "@teambit/defender.jest-tester": "0.0.8",
         "@teambit/eslint-config-bit-react": "~0.0.367",
+        "@teambit/html.modules.render-template": "^1.0.4",
         "@testing-library/jest-dom": "5.16.5",
         "@typescript-eslint/eslint-plugin": "5.35.1",
         "eslint-import-resolver-node": "0.3.6",

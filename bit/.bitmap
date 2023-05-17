@@ -9,39 +9,45 @@
  */
 
 {
-    "modules/hero": {
+    "html/cards": {
         "scope": "zxc1092.mui",
         "version": "0.0.1",
+        "mainFile": "index.ts",
+        "rootDir": "mui/html/cards"
+    },
+    "modules/hero": {
+        "scope": "zxc1092.mui",
+        "version": "0.0.2",
         "mainFile": "index.ts",
         "rootDir": "mui/modules/hero"
     },
     "modules/hero-text": {
         "scope": "zxc1092.mui",
-        "version": "0.0.1",
+        "version": "0.0.2",
         "mainFile": "index.ts",
         "rootDir": "mui/modules/hero-text"
     },
     "modules/info-cards": {
         "scope": "zxc1092.mui",
-        "version": "0.0.1",
+        "version": "0.0.2",
         "mainFile": "index.ts",
         "rootDir": "mui/modules/info-cards"
     },
     "modules/navbar": {
         "scope": "zxc1092.mui",
-        "version": "0.0.1",
+        "version": "0.0.2",
         "mainFile": "index.ts",
         "rootDir": "mui/modules/navbar"
     },
     "modules/promo-cards": {
         "scope": "zxc1092.mui",
-        "version": "0.0.1",
+        "version": "0.0.2",
         "mainFile": "index.ts",
         "rootDir": "mui/modules/promo-cards"
     },
     "pages/home": {
         "scope": "zxc1092.mui",
-        "version": "0.0.1",
+        "version": "0.0.2",
         "mainFile": "index.ts",
         "rootDir": "mui/pages/home"
     },
@@ -59,25 +65,25 @@
     },
     "theme/theme-provider": {
         "scope": "zxc1092.mui",
-        "version": "0.0.2",
+        "version": "0.0.3",
         "mainFile": "index.ts",
         "rootDir": "mui/theme/theme-provider"
     },
     "ui/button": {
         "scope": "zxc1092.mui",
-        "version": "0.0.2",
+        "version": "0.0.3",
         "mainFile": "index.ts",
         "rootDir": "mui/ui/button"
     },
     "ui/jss-button": {
         "scope": "zxc1092.mui",
-        "version": "0.0.1",
+        "version": "0.0.2",
         "mainFile": "index.ts",
         "rootDir": "mui/ui/jss-button"
     },
     "ui/typography": {
         "scope": "zxc1092.mui",
-        "version": "0.0.2",
+        "version": "0.0.3",
         "mainFile": "index.ts",
         "rootDir": "mui/ui/typography"
     },

@@ -21,9 +21,10 @@ importers:
       '@sitecore-jss/sitecore-jss-react': ^21.1.0
       '@teambit/defender.jest-tester': 0.0.8
       '@teambit/eslint-config-bit-react': ~0.0.367
+      '@teambit/html.modules.render-template': ^1.0.4
       '@testing-library/jest-dom': 5.16.5
       '@testing-library/react': ^12.1.5
-      '@types/jest': ^26.0.0
+      '@types/jest': 26.0.20
       '@types/node': 12.20.4
       '@types/react': ^17.0.8
       '@types/react-dom': ^17.0.5
@@ -66,11 +67,15 @@ importers:
       react-dom: registry.npmjs.org/react-dom/17.0.2_react@17.0.2
     devDependencies:
       '@babel/runtime': registry.npmjs.org/@babel/runtime/7.20.0
+      '@teambit/html.modules.render-template': 1.0.4
       '@types/jest': registry.npmjs.org/@types/jest/26.0.20
       '@types/node': registry.npmjs.org/@types/node/12.20.4
       '@types/react': registry.npmjs.org/@types/react/17.0.56
       '@types/react-dom': registry.npmjs.org/@types/react-dom/17.0.19
       '@types/testing-library__jest-dom': registry.npmjs.org/@types/testing-library__jest-dom/5.9.5
+
+  mui/html/cards:
+    specifiers: {}
 
   mui/modules/hero:
     specifiers: {}
@@ -199,6 +204,12 @@ packages:
       junit-report-builder: registry.npmjs.org/junit-report-builder/3.0.0
       strip-ansi: registry.npmjs.org/strip-ansi/6.0.0
     dev: false
+
+  /@teambit/html.modules.render-template/1.0.4:
+    resolution: {integrity: sha1-t4Mqd8b1Q/OQbG/vG5aZIkvYPiE=, tarball: '@teambit/html.modules.render-template/-/@teambit-html.modules.render-template-1.0.4.tgz'}
+    dependencies:
+      '@teambit/html.modules.create-element-from-string': registry.npmjs.org/@teambit/html.modules.create-element-from-string/0.0.104
+    dev: true
 
   registry.npmjs.org/@adobe/css-tools/4.2.0:
     resolution: {integrity: sha512-E09FiIft46CmH5Qnjb0wsW54/YQd69LsxeKUOWawmws1XWvyFGURnAChH0mlr7YPFR1ofwvUQfcL0J3lMxXqPA==, registry: https://node.bit.dev/, tarball: https://registry.npmjs.org/@adobe/css-tools/-/css-tools-4.2.0.tgz}
@@ -3021,6 +3032,13 @@ packages:
       - typescript
     dev: false
 
+  registry.npmjs.org/@teambit/html.modules.create-element-from-string/0.0.104:
+    resolution: {integrity: sha512-CrRcg9yg/MAvGOKCTuedTSKCwEPPUs19aD0odEOYQ1niqnxLgZopBK4Gxm9tpKoTaxoFLo8GnSXjyojog+qCpg==, registry: https://node.bit.dev/, tarball: https://registry.npmjs.org/@teambit/html.modules.create-element-from-string/-/html.modules.create-element-from-string-0.0.104.tgz}
+    name: '@teambit/html.modules.create-element-from-string'
+    version: 0.0.104
+    engines: {node: '>=12.22.0'}
+    dev: true
+
   registry.npmjs.org/@teambit/tests-results/0.0.104:
     resolution: {integrity: sha512-JuXh+pXR1O437N2lE9n/C5pIrlune7pRwPjPQ9ZviCV/+EZW3xPjJJX2ehLHkhkL6bNpuSpSyUSb34xkXTlKaw==, registry: https://node.bit.dev/, tarball: https://registry.npmjs.org/@teambit/tests-results/-/tests-results-0.0.104.tgz}
     name: '@teambit/tests-results'
@@ -5299,7 +5317,7 @@ packages:
     dev: false
 
   registry.npmjs.org/fsevents/2.3.2:
-    resolution: {integrity: sha512-xiqMQR4xAeHTuB9uWm+fFRcIOgKBMiOBP+eXiyT7jsgVCq1bkVygt00oASowB7EdtpOHaaPgKt812P9ab+DDKA==, registry: https://node.bit.cloud/, tarball: https://registry.npmjs.org/fsevents/-/fsevents-2.3.2.tgz}
+    resolution: {integrity: sha512-xiqMQR4xAeHTuB9uWm+fFRcIOgKBMiOBP+eXiyT7jsgVCq1bkVygt00oASowB7EdtpOHaaPgKt812P9ab+DDKA==, registry: https://node.bit.dev/, tarball: https://registry.npmjs.org/fsevents/-/fsevents-2.3.2.tgz}
     name: fsevents
     version: 2.3.2
     engines: {node: ^8.16.0 || ^10.6.0 || >=11.0.0}
